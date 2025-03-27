@@ -41,13 +41,3 @@ contract ClaimAirdrop is Script {
         claimAirdrop(mostRecentlyDeployedAirdropContract);
     }
 }
-
-// script to create signature using foundry
-
-// 5332d816cfd2b76c2f83c8a3e0d81a4cc979b9d42e0f2a1a2f2484e6dd72dd69648002851cb9a72f59027fe87c8deea17030c59d3c739e93847d50d51aa2cd8c1c
-// first 32 bytes -> r
-// second 32 bytes -> s
-// final byte -> v
-
-// When working with functions from libraries like OpenZeppelin or other APIs,
-// the signature format typically follows the order _v,r,s_ instead of the _r,s,v_ we used in this lesson.
